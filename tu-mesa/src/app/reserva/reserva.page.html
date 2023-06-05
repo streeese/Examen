@@ -18,7 +18,7 @@
         <p><ion-icon name="alarm"></ion-icon>16:30</p>
       </ion-label>
       <div class="item-note" item-end>
-        <button ion-button clear [routerLink]="['/modificar/']">
+        <button ion-button clear [routerLink]="['/modificar']">
           <ion-icon name="create" style="zoom:2.0"></ion-icon>
         </button>
         <button ion-button clear>
@@ -34,7 +34,23 @@
         <p><ion-icon name="alarm"></ion-icon>14:00</p>
       </ion-label>
       <div class="item-note" item-end>
-        <button ion-button clear [routerLink]="['/modificar/']">
+        <button ion-button clear [routerLink]="['/modificar']">
+          <ion-icon name="create" style="zoom:2.0"></ion-icon>
+        </button>
+        <button ion-button clear>
+          <ion-icon name="trash" style="zoom:2.0"></ion-icon>
+        </button>
+      </div>
+    </ion-item>
+    <ion-item class="user-list">
+      <ion-label>
+        <h5><ion-icon name="person"></ion-icon>Evelyn Cornejo</h5>
+        <p><ion-icon name="call"></ion-icon>+5698116498</p>
+        <h5><ion-icon name="body"></ion-icon>3 personas</h5>
+        <p><ion-icon name="alarm"></ion-icon>19:00</p>
+      </ion-label>
+      <div class="item-note" item-end>
+        <button ion-button clear [routerLink]="['/modificar']">
           <ion-icon name="create" style="zoom:2.0"></ion-icon>
         </button>
         <button ion-button clear>
@@ -46,7 +62,7 @@
 <ion-tabs>
   <ion-tab-bar slot="bottom">
     <ion-tab-button routerLinkActive="tab-selected" routerLink="['/reserva']" class="ios" tab="reserva">
-      <ion-icon name="list-box"></ion-icon>
+      <ion-icon name="list"></ion-icon>
       <ion-label>Reservas</ion-label>
     </ion-tab-button>
     <ion-tab-button routerLinkActive="tab-selected" routerLink="['/agendar']" class="ios" tab="agendar">
