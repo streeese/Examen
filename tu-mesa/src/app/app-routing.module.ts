@@ -35,6 +35,10 @@ const routes: Routes = [
     path: 'agendar',
     loadChildren: () => import('./agendar/agendar.module').then( m => m.AgendarPageModule)
   },
+  {
+    path: 'usuario/:id',
+    loadChildren: () => import('./usuario/usuario.module').then( m => m.UsuarioPageModule)
+  },
 ];
 
 @NgModule({
