@@ -51,6 +51,10 @@ const routes: Routes = [
     path: 'agregar',
     loadChildren: () => import('./agregar/agregar.module').then( m => m.AgregarPageModule)
   },
+  {
+    path: 'usocamara',
+    loadChildren: () => import('./usocamara/usocamara.module').then( m => m.UsocamaraPageModule)
+  },
 ];
 
 @NgModule({
