@@ -1,9 +1,21 @@
 import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
+import { retry } from 'rxjs/operators';
+
 
 @Injectable({
   providedIn: 'root'
 })
 export class ApiserviceService {
+  //se establece la url de la API a consumir
+  apiURL = 'https://jsonplaceholder.typicode.com';
 
-  constructor() { }
+
+  constructor(private http:HttpClient) { }
+  getUsuarios():Observable<any>{
+    return this.http.get(this.apiURL+'/users/').pipe(
+      retry(3)
+    );
+  }
 }

@@ -55,6 +55,10 @@ const routes: Routes = [
     path: 'usocamara',
     loadChildren: () => import('./usocamara/usocamara.module').then( m => m.UsocamaraPageModule)
   },
+  {
+    path: 'apiexterna',
+    loadChildren: () => import('./apiexterna/apiexterna.module').then( m => m.ApiexternaPageModule)
+  },
 ];
 
 @NgModule({
