@@ -39,6 +39,18 @@ const routes: Routes = [
     path: 'usuario/:id',
     loadChildren: () => import('./usuario/usuario.module').then( m => m.UsuarioPageModule)
   },
+  {
+    path: 'listar',
+    loadChildren: () => import('./listar/listar.module').then( m => m.ListarPageModule)
+  },
+  {
+    path: 'modificardatosbd',
+    loadChildren: () => import('./modificardatosbd/modificardatosbd.module').then( m => m.ModificardatosbdPageModule)
+  },
+  {
+    path: 'agregar',
+    loadChildren: () => import('./agregar/agregar.module').then( m => m.AgregarPageModule)
+  },
 ];
 
 @NgModule({

@@ -1,0 +1,36 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Agregar Reserva</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Agregar Reserva</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <h2 class="ion-text-center">Reserva a Agregar</h2>
+  <ion-item>
+    <ion-labe position="floating">Nombre titular</ion-labe>
+    <ion-input type="text" [(ngModel)]="nombre_titular"></ion-input>  
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Hora</ion-label>
+    <ion-input type="text" [(ngModel)]="hora"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Fecha</ion-label>
+    <ion-input type="text" [(ngModel)]="dia"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Email Titular</ion-label>
+    <ion-input type="text" [(ngModel)]="correo_titular"></ion-input>
+  </ion-item>
+
+  <ion-button shape="block" (click)="editar()">Guardar Cambios</ion-button>
+</ion-content>
