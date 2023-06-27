@@ -8,7 +8,7 @@ import { Reserva } from './reserva';
   providedIn: 'root'
 })
 export class BdserviceService {
-  modificarReservas(id_reserva: string, nombre_titular: string, correo_titular: string, hora: string, dia: string) {
+  modificarReserva(id_reserva: string, nombre_titular: string, correo_titular: string, hora: string, dia: string) {
     throw new Error('Method not implemented.');
   }
 
@@ -119,7 +119,7 @@ export class BdserviceService {
   }
 
 
-  modificarNoticias(id_reserva: any,nombre_titular: any, correo_titular: any, hora: any, dia: any){
+  modificarReservas(id_reserva: any,nombre_titular: any, correo_titular: any, hora: any, dia: any){
     let data = [id_reserva,nombre_titular,correo_titular,hora,dia];
     return this.database.executeSql('UPDATE reserva SET nombre_titular = ?, correo_titular, hora = ?, dia = ? WHERE id_reserva = ?',data).then(data2=>{
       this.buscarReservas();
