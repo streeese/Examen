@@ -5,11 +5,11 @@ describe('ApiexternaPage', () => {
   let component: ApiexternaPage;
   let fixture: ComponentFixture<ApiexternaPage>;
 
-  beforeEach(async(() => {
+  beforeEach(async() => {
     fixture = TestBed.createComponent(ApiexternaPage);
     component = fixture.componentInstance;
     fixture.detectChanges();
-  }));
+  });
 
   it('should create', () => {
     expect(component).toBeTruthy();
