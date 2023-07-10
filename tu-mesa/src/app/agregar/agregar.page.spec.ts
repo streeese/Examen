@@ -18,4 +18,9 @@ describe('AgregarPage', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('Retorna un valor correcto la variable', () => {
+    var texto = "Hola";
+    expect(component.nombre_titular).toBe(texto);
+  });
 });

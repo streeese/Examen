@@ -10,7 +10,7 @@ import { BdserviceService } from 'src/app/services/bdservice.service';
 })
 export class AgregarPage implements OnInit {
       id_reserva: "";
-      nombre_titular: "";
+      nombre_titular: "Hola";
       correo_titular: "";
       hora: "";
       dia: "";
